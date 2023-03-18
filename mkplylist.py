@@ -28,7 +28,7 @@ def get_file_list(root, files, relative=True):
 
 
 def write_playlist(playlist_path, files):
-    with open(playlist_path, 'w', encoding='utf-8') as p:
+    with open(playlist_path, 'w', encoding='utf-8-sig') as p:
         for f in files:
             print(f, file=p)
 
